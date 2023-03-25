@@ -1,0 +1,15 @@
+#summarys{
+    display: flex;
+}
+
+#summarys p{
+    width: 20rem;
+}
+
+.button-container{
+    padding: 0 !important;
+}
+
+.mr-3{
+    margin-right: 1rem ;
+}
