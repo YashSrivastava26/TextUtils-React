@@ -1,13 +1,14 @@
 import React from 'react'
 import Accordion from 'react-bootstrap/Accordion';
+import "./mode.css"
 
-function About() {
+function About(props) {
     return (
         <div className="container">
-            <Accordion>
+            <Accordion className={`${props.mode}`}>
                 <Accordion.Item eventKey="0">
-                    <Accordion.Header>How to Use</Accordion.Header>
-                    <Accordion.Body>
+                    <Accordion.Header class>How to Use</Accordion.Header>
+                    <Accordion.Body >
                         <p>You can simply type or copy/paste in the textbox and click on various functionalities by clicking their respective button.</p>
                         For more info about the functionalities check below
                     </Accordion.Body>
@@ -68,4 +69,4 @@ function About() {
     )
 }
 
-export default About
+export default About;

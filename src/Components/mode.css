@@ -7,5 +7,21 @@
     background-color: white !important;
     color: black !important;
 }
+.dark .accordion-button{
+    background-color: #343a40 !important;
+    color: white !important;
+}
+.dark .accordion-body{
+    background-color: #343a40 !important;
+    color: white !important;
+}
 
+.light .accordion-button{
+    background-color: white !important;
+    color: black !important;
+}
+.light .accordion-body{
+    background-color: white !important;
+    color: black !important;
+}
 

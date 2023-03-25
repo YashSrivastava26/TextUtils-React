@@ -2,13 +2,13 @@ import './App.css';
 import NavBar from './Components/NavBar'
 import InputArea from './Components/InputArea'
 import Alert from './Components/Alerts';
-// import About from './Components/About';
+import About from './Components/About';
 import { useState } from 'react';
-// import {
-//   BrowserRouter as Router,
-//   Routes,
-//   Route
-// } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route
+} from "react-router-dom";
 import Footer from './Components/Footer';
 
 function App() {
@@ -42,16 +42,16 @@ function App() {
   }
   return (
     <>
-      {/* <Router> */}
+      <Router>
       <NavBar mode={mode} toggleMode={toggleMode}/>
       <Alert alert={alert}/>
-      <InputArea mode={mode} showAlert={showAlert}/>
-      {/* <Routes>
+      {/* <InputArea mode={mode} showAlert={showAlert}/> */}
+      <Routes>
         <Route exact path='/' element={<InputArea mode={mode} showAlert={showAlert}/>}></Route>
-        <Route exact path='/about' element={<About/>}></Route>       
-      </Routes> */}
+        <Route exact path='/about' element={<About mode = {mode}/>}></Route>       
+      </Routes>
       <Footer/>
-      {/* </Router> */}
+      </Router>
     </>
   );
 }
